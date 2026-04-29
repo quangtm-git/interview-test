@@ -19,6 +19,7 @@ public class UserController {
     @PutMapping("/users")
     public ResponseEntity<String> modifyUser() {
         log.info("validation");
+        log.info("logic addressing");
 
         return ResponseEntity.status(HttpStatus.OK).body("User modified successfully");
     }
