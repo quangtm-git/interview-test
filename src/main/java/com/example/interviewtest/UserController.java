@@ -20,6 +20,7 @@ public class UserController {
     public ResponseEntity<String> modifyUser() {
         log.info("validation");
         log.info("logic addressing");
+        log.info("modification saving");
 
         return ResponseEntity.status(HttpStatus.OK).body("User modified successfully");
     }
